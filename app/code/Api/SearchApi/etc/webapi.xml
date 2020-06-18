@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * webapi
+ *
+ * @copyright Copyright © 2020 Staempfli AG. All rights reserved.
+ * @author    juan.alonso@staempfli.com
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V2/product/getProductById/:id" method="GET">
+        <service class="All\SearchApi\Api\ProductRepositoryInterface" method="getProductById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

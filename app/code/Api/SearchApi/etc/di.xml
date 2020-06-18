@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * di
+ *
+ * @copyright Copyright © 2020 Staempfli AG. All rights reserved.
+ * @author    juan.alonso@staempfli.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Api\SearchApi\Api\ProductRepositoryInterface" type="Api\SearchApi\Model\ProductRepository" />
+    <preference for="Api\SearchApi\Api\Data\ProductInterface" type="Api\SearchApi\Model\Data\Product" />
+</config>
